@@ -498,8 +498,17 @@ main {
   opacity: 1;
 }
 
-/* Media Queries for additional responsiveness */
+/* Media Queries for responsive widths */
 @media (max-width: 768px) {
+  .navbar,
+  .about-me,
+  .work-exp,
+  .skills,
+  .projects,
+  .footer-links {
+    width: min(90%, 1200px);
+  }
+  
   .navbar {
     padding: 0.5rem;
   }
@@ -531,6 +540,17 @@ main {
   
   .grid-projects {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar,
+  .about-me,
+  .work-exp,
+  .skills,
+  .projects,
+  .footer-links {
+    width: min(50%, 1200px);
   }
 }
 
