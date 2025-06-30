@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/letterM.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Mihaela Chiaburu</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-list-item1">Home</li>
+        <li class="navbar-list-item2">Projects</li>
+        <li class="navbar-list-item3">About Me</li>
+        <li class="navbar-list-item4">Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <main>
+      <article>
+        <section class="about-me">
+          <div class="about-me-info">
+            <h1 class="about-me-salut">Salut, I'm Mihaela!</h1>
+            <p class="about-me-dev"><b>C#/.NET</b> Backend Developer in the making</p>
+            <p class="about-me-location">
+              <img class="image-location" src="/images/pin (1).png" alt="pin-location icon">
+              Moldova, Chisinau
+            </p>
+            <div class="about-me-resume-and-links">
+              <div class="about-me-resume">
+                <a href="Chiaburu_Mihaela_Resume.pdf" target="_blank" class="about-me-resume-button">
+                  Resume
+                  <img class="image-resume" src="/images/resume.png" alt="resume icon">
+                </a>
+              </div>
+              <div class="about-me-contact-links">
+                <a href="https://github.com/mihaela-chiaburu" target="_blank">
+                  <img src="/images/github.png" alt="github icon" class="about-me-contact-links-github-icon">
+                </a>
+                <a href="">
+                  <img src="/images/letter.png" alt="letter icon" class="about-me-contact-links-letter-icon">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="about-me-image" src="/images/metemplate.png" alt="Self portarait">
+        </section>
+        <section class="work-exp">
+          <input type="radio" id="tab-work"   name="exp-tab" checked hidden>
+          <input type="radio" id="tab-edu"    name="exp-tab"        hidden>
+          <div class="experienrce">
+            <div class="work-exp-buttons">
+              <label for="tab-work" class="tab-btn">Work</label>
+              <label for="tab-edu"  class="tab-btn">Education</label>
+              <!-- <button class="experienrce-work-button">Work</button>
+              <button class="experienrce-education-button">Education</button> -->
+            </div>
+            <div class="experienrce-work   card">
+                <a href="https://ict.md/members/regular/pentalog-a-globant-division/" target="_blank" class="intern-link">
+                  <img src="/images/pentalog.png" alt="pentalog logo" class="internship-logo">
+                </a>
+                <div class="work-exp-info">
+                  <div class="work-dates">
+                    <span>Sept 2024</span>
+                    <span>-</span>
+                    <span>Oct 2024</span>
+                  </div>
+                  <h2 class="company-name">Pentalog a globant division</h2>
+                  <p class="role-work">Software Developer Intern</p>
+                  <ul class="work-done-intern">
+                    <li class="work-done-intern-1">Developed an AI-powered eco marketplace (ReFreshAI) using Java Spring Boot and MySQL, with features like authentication, product CRUD, filtering, cart, and reviews.</li>
+                    <li class="work-done-intern-2">Integrated Ollama AI for smart chat and dynamic pricing, collaborating in an Agile team of 5 with real-world workflows and tools like Git, Jira, and Postman.</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="experienrce-education   card">
+                <a href="https://fcim.utm.md/" target="_blank" class="education-link">
+                  <img src="/images/utm.jpg" alt="utm logo" class="university-logo">
+                </a>
+                <div class="education-exp-info">
+                  <div class="education-dates">
+                    <span>Sept 2022</span>
+                    <span>-</span>
+                    <span>July 2026</span>
+                  </div>
+                  <h2 class="uni-name">Technical University of Moldova</h2>
+                  <p class="speciality-name">BS in Information Technology, French-taught program </p>
+                  <ul class="awards-and-honors">
+                    <li class="award-1">1st place with the team "PAS D'ERREURS" at the "25 ans ensamble" hackathon.</li>
+                    <li class="award-2">2nd place in the Student Competition "Database Management - 2025", 7th edition.</li>
+                    <li class="award-3">Included in the Rector’s List (Top 1%) and Dean’s List (Top 3%) for academic performance.</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="skills">
+          <h2 class="skills-h2">Skills</h2>
+          <div class="skills-set">
+            <div class="skills-languages">
+              <h3 class="languages-h3">Languages</h3>
+              <div class="skill-point  sk-lang">C#</div>
+            </div>
+            <div class="skills-frameworks">
+              <h3 class="frameworks-h3">Frameworks</h3>
+              <div class="skill-point sk-fr">.NET 6-8</div>
+              <div class="skill-point sk-fr">ASP.NET MVC</div>
+              <div class="skill-point sk-fr">Entity Framework</div>
+              <div class="skill-point sk-fr">xUnit</div>
+              <div class="skill-point sk-fr">Blazor & Razor Pages</div>
+            </div>
+            <div class="skills-tools">
+              <h3 class="tools-h3">Tools</h3>
+              <div class="skill-point sk-tool">Visual Studio</div>
+              <div class="skill-point sk-tool">Git & Github</div>
+              <div class="skill-point sk-tool">SQL Server</div>
+              <div class="skill-point sk-tool">Docker</div>
+              <div class="skill-point sk-tool">Azure DevOps</div>
+            </div>
+            <div class="skills-practices">
+              <h3 class="practices-h3">Practices</h3>
+              <div class="skill-point sk-pr">Agile</div>
+              <div class="skill-point sk-pr">OOP</div>
+              <div class="skill-point sk-pr">SOLID</div>
+              <div class="skill-point sk-pr">Design Patterns</div>
+              <div class="skill-point sk-pr">Business Logic</div>
+            </div>
+          </div>
+        </section>
+        <section class="projects">
+          <h2 class="personal-pj-h2">Personal Projects</h2>
+          <section class="grid-projects">
+            <div class="project-item1">
+              <div class="item1-image">
+                <a href="">
+                  <img src="images/image.png" alt="Chrome Extension" class="extension-image">
+                </a>
+              </div>
+              <div>
+                <div class="item1-title">
+                  <h3 class="item1-title-h3">ShowTracker</h3>
+                  <div class="item1-github">
+                    <a href="" class="source-link">
+                      <div class="source-button">
+                        <p class="source-text">Source</p>
+                        <img src="images/github (1).png" alt="github logo" class="item1-github-logo">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <p>Chrome Extension to track series, anime, and movie progress across streaming platforms.</p>
+                </div>
+              </div>
+                <div class="item-tech">
+                  <div class="item-tech-skill">.Net Core Web API</div>
+                  <div class="item-tech-skill">SQL Server</div>
+                  <div class="item-tech-skill">Chrome API</div>
+                </div>
+            </div>
+            <div class="project-item2">
+              <div class="item1-image">
+                <a href="">
+                  <img src="images/studyhub.jpg" alt="StudyHub" class="extension-image">
+                </a>
+              </div>
+              <div>
+                <div class="item1-title">
+                  <h3 class="item1-title-h3">StudyHub</h3>
+                  <div class="item1-github">
+                    <a href="" class="source-link">
+                      <div class="source-button">
+                        <p class="source-text">Source</p>
+                        <img src="images/github (1).png" alt="github logo" class="item1-github-logo">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <p>A full-stack web application to organize and track tech learning resources.</p>
+                </div>
+              </div>
+              <div class="item-tech">
+                <div class="item-tech-skill">ASP.Net Core</div>
+                <div class="item-tech-skill">SQL Server</div>
+                <div class="item-tech-skill">Entity Framework</div>
+                <div class="item-tech-skill">Azure</div>
+              </div>
+            </div>
+            <div class="project-item3">
+              <div class="item1-image">
+                <a href="">
+                  <img src="images/weather.jpg" alt="Weather App" class="extension-image">
+                </a>
+              </div>
+              <div>
+                <div class="item1-title">
+                  <h3 class="item1-title-h3">Weather App</h3>
+                  <div class="item1-github">
+                    <a href="" class="source-link">
+                      <div class="source-button">
+                        <p class="source-text">Source</p>
+                        <img src="images/github (1).png" alt="github logo" class="item1-github-logo">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <p>A simple Weather App for studying purpose.</p>
+                </div>
+              </div>
+              <div class="item-tech">
+                <div class="item-tech-skill">ASP.Net Core</div>
+                <div class="item-tech-skill">API keys</div>
+                <div class="item-tech-skill">Azure</div>
+              </div>
+            </div>
+            <div class="project-item4">
+              <div class="item1-image">
+                <a href="">
+                  <img src="images/ecomerce.jpg" alt="e-commerce" class="extension-image">
+                </a>
+              </div>
+              <div>
+                <div class="item1-title">
+                  <h3 class="item1-title-h3">E-commerce website</h3>
+                  <div class="item1-github">
+                    <a href="" class="source-link">
+                      <div class="source-button">
+                        <p class="source-text">Source</p>
+                        <img src="images/github (1).png" alt="github logo" class="item1-github-logo">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-description">
+                  <p>A simple E-commerce website for selling chinese tea</p>
+                </div>
+              </div>
+              <div class="item-tech">
+                <div class="item-tech-skill">ASP.Net Core</div>
+                <div class="item-tech-skill">SQL Server</div>
+                <div class="item-tech-skill">Entity Framework</div>
+                <div class="item-tech-skill">Azure</div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </article>
+    </main>
+  </div>
+  <footer>
+    <div class="footer-links">
+        <p class="copyright">
+          © 2025 Chiaburu Mihaela
+        </p>
+        <div class="about-me-contact-links">
+          <a href="https://github.com/mihaela-chiaburu" target="_blank">
+            <img src="/images/github (1).png" alt="github icon" class="about-me-contact-links-github-icon">
+          </a>
+          <a href="">
+            <img src="/images/letter.png" alt="letter icon" class="about-me-contact-links-letter-icon">
+          </a>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
