@@ -1,7 +1,7 @@
 @property --top {
   syntax: '<color>';
   inherits: false;
-  initial-value: rgba(255, 107, 107, 0.2); 
+  initial-value: rgba(255, 107, 107, 0.2);
 }
 
 html, body {
@@ -34,11 +34,11 @@ body {
   top: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.596);
-  backdrop-filter: blur(10px);       
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
-} 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 .navbar {
   margin: auto;
@@ -47,6 +47,10 @@ body {
   font-family: "Inter", sans-serif;
   font-size: clamp(14px, 2.5vw, 16px);
   color: rgb(102, 102, 102);
+}
+
+.navbar-list-item1 {
+  margin-right: auto;
 }
 
 .nav-link {
@@ -65,10 +69,28 @@ body {
   margin: 0;
   list-style-type: none;
   display: flex;
-  justify-content: flex-start;
-  gap: clamp(1rem, 2vw, 2.5rem);
+  justify-content: flex-end;
+  gap: clamp(0.5rem, 1.5vw, 2.5rem);
   align-items: center;
   flex-wrap: wrap;
+}
+
+.sun-nav{
+  width: 18px;
+  height: auto;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.home-button{
+  width: 55px;
+  height: auto;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 main {
@@ -93,27 +115,61 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
+  overflow: visible;
+  /* position:relative; */
+}
+
+.about-me-info {
+  align-content: center;
 }
 
 .about-me-dev {
   margin-top: 0.5rem;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
-.about-me-image {
+/* .about-me-image {
   width: min(100%, 12rem);
   height: auto;
+} */
+.about-me-image {
+  width: 12rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100px;
+  /* border: 3px solid rgb(219, 219, 219);
+  box-shadow: 0px 0px 15px 6px rgba(115, 107, 98, 0.4); */
+  /* position:absolute;
+  left:500px;
+  top: -15px;
+  z-index: 1000; */
 }
 
 .about-me-location {
-  display: flex;
-  align-items: center;
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
+.available-green-dot {
+  background-color: #00c950;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-right: 0.5rem; /* spacing from text */
+}
+
+.avail-work {
+  opacity: 0.5;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+  padding-bottom: 1px;
+}
+
+
+
 .image-location {
-  width: 1.5rem;
+  width: 1rem;
   height: auto;
   margin-right: 5px;
 }
@@ -127,14 +183,14 @@ main {
 }
 
 .about-me-resume-button {
-  display: inline-flex;                   
-  align-items: center;                    
-  gap: 0.5em;                             
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   padding: 0.5em 1em;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  border: 1px solid #e1e1e1; 
+  border: 1px solid #e1e1e1;
   border-radius: 5px;
   font-weight: 600;
   font-size: clamp(14px, 2vw, 16px);
@@ -146,7 +202,7 @@ main {
 }
 
 .image-resume {
-  width: 1em;          
+  width: 1em;
   height: 1em;
   margin: 0;
   padding: 0;
@@ -155,7 +211,7 @@ main {
 
 .about-me-contact-links-github-icon,
 .item1-github-logo {
-  width: 1.25em;          
+  width: 1.25em;
   height: auto;
   margin: 0;
   padding: 0;
@@ -163,7 +219,7 @@ main {
 }
 
 .about-me-contact-links-letter-icon {
-  width: 1.45em;          
+  width: 1.45em;
   height: auto;
   margin: 0;
   padding: 0;
@@ -172,8 +228,8 @@ main {
 }
 
 .about-me-contact-links {
-  display: inline-flex;                   
-  align-items: center;   
+  display: inline-flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -187,8 +243,8 @@ main {
 }
 
 .work-exp-buttons {
-  display: flex;                   
-  align-items: center; 
+  display: flex;
+  align-items: center;
   width: 100%;
   background-color: #f3f3f3;
   padding: 5px;
@@ -196,8 +252,8 @@ main {
 }
 
 .tab-btn {
-  flex: 1;       
-  text-align: center;        
+  flex: 1;
+  text-align: center;
   padding: 8px 0.5em;
   border-width: 0;
   background-color: #f3f3f3;
@@ -215,9 +271,9 @@ main {
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   box-shadow: 0px 0px 2px 1px rgba(137, 137, 137, 0.2);
-  display: flex;             
-  align-items: flex-start;   
-  gap: 15px; 
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
   padding: 15px;
   margin-top: 10px;
   flex-wrap: wrap;
@@ -225,7 +281,7 @@ main {
 
 .intern-link,
 .education-link {
-  display: inline-block; 
+  display: inline-block;
 }
 
 .internship-logo,
@@ -234,8 +290,8 @@ main {
   height: clamp(40px, 10vw, 50px);
   border: 1px solid #d1d1d1;
   border-radius: 100px;
-  object-fit: cover;     
-  object-position: center; 
+  object-fit: cover;
+  object-position: center;
   margin: 0;
   padding: 0;
 }
@@ -317,7 +373,7 @@ main {
   gap: 5px;
   margin: auto;
   width: min(50%, 1200px);
-  padding: 0 1rem 1.5rem;
+  padding: 1rem 1.5rem;
   justify-content: space-between;
 }
 
@@ -352,7 +408,7 @@ main {
 .skills-languages,
 .skills-practices {
   display: flex;
-  flex-wrap: wrap;      
+  flex-wrap: wrap;
   gap: 8px;
   align-items: flex-start;
 }
@@ -386,13 +442,19 @@ main {
   margin: auto;
   width: min(50%, 1200px);
   padding: 1.5rem 1rem;
+  /* padding-bottom: 1.5rem; */
   justify-content: space-between;
+}
+
+.personal-pj-h2{
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .grid-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 .project-item1,
@@ -414,9 +476,9 @@ main {
   max-width: 300px;
   height: auto;
   aspect-ratio: 16/9;
-  box-shadow: 
-    -4px 0px 6px rgba(0, 0, 0, 0.2), 
-    4px 0px 6px rgba(0, 0, 0, 0.2);  
+  box-shadow:
+    -4px 0px 6px rgba(0, 0, 0, 0.2),
+    4px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .item1-image {
@@ -468,7 +530,7 @@ main {
 .item-tech {
   margin-top: 15px;
   display: flex;
-  flex-wrap: wrap;      
+  flex-wrap: wrap;
   gap: 8px;
   align-items: flex-start;
   font-size: clamp(8px, 1.2vw, 10px);
@@ -519,36 +581,40 @@ main {
   .footer-links {
     width: min(90%, 1200px);
   }
-  
+
   .navbar {
     padding: 0.5rem;
   }
-  
+
   .navbar-list {
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .about-me {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
-  .about-me-image {
+
+  /* .about-me-image {
     width: 100%;
     max-width: 10rem;
+  } */
+  .about-me-image {
+    width: 15rem; /* Smaller but still prominent for mobile */
+    max-width: 90%; /* Ensure it fits within the container */
   }
-  
+
   .work-exp-buttons {
     flex-direction: column;
     gap: 5px;
   }
-  
+
   .tab-btn {
     width: 100%;
   }
-  
+
   .grid-projects {
     grid-template-columns: 1fr;
   }
@@ -569,13 +635,13 @@ main {
   .about-me-salut {
     font-size: clamp(20px, 5vw, 28px);
   }
-  
+
   .about-me-resume-and-links,
   .about-me-contact-links {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   .skills-frameworks,
   .skills-tools,
   .skills-languages,
