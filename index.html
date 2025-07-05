@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="images/icon_new (1).ico">
+  <link rel="icon" type="image/x-icon" href="images/icon_new2.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">  
@@ -19,6 +19,9 @@
           <a href="index.html" class="nav-link">
             <img src="images/me_button3.png" alt="home page button" class="home-button">
           </a>
+        </li>
+        <li class="navbar-list-item2">
+          <a href="index.html" class="nav-link">home</a>
         </li>
         <li class="navbar-list-item2">
           <a href="pages/projects.html" class="nav-link">projects</a>
@@ -66,7 +69,7 @@
               </div>
             </div>
           </div>
-          <img class="about-me-image" src="images/icon_new2.png" alt="Self portarait">
+          <img class="about-me-image" src="images/me_button2.png" alt="Self portarait">
         </section>
         <section class="work-exp">
           <input type="radio" id="tab-work"   name="exp-tab" checked hidden>
@@ -218,7 +221,7 @@
               </div>
               <div>
                 <div class="item1-title">
-                  <h3 class="item1-title-h3">Weather App</h3>
+                  <h3 class="item1-title-h3">Weather App + Calculator + ToDo App</h3>
                   <div class="item1-github">
                     <a href="" class="source-link">
                       <div class="source-button">
@@ -229,7 +232,7 @@
                   </div>
                 </div>
                 <div class="item-description">
-                  <p>A simple Weather App for studying purpose.</p>
+                  <p>IT student starter pack.</p>
                 </div>
               </div>
               <div class="item-tech">
@@ -269,6 +272,21 @@
             </div>
           </section>
         </section>
+        <form action="https://formsubmit.co/mchiaburu.1337@gmail.com" method="POST" class="contact">
+          <input type="hidden" name="_captcha" value="false">
+          <h2 class="personal-pj-h2">Contact me</h2>
+          <div class="input-info">
+            <input type="text" id="name" name="name" placeholder="Name" class="input-name" required>
+            <input type="email" id="email" name="email" placeholder="Email" class="input-name" required>
+          </div>
+          <textarea id="feedback-box" name="feedback" rows="5" placeholder="Leave feedback about the website, your thoughts, or career opportunities." required></textarea>
+          <button type="submit" class="send-button">
+            Send Message 
+            <span class="send-logo">
+              <img src="images/send-white.png" alt="send-con" class="send-icon">
+            </span>
+          </button>
+        </form>
       </article>
     </main>
   </div>

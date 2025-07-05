@@ -1,0 +1,97 @@
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.available-green-dot{
+  margin-left: 5px;
+}
+
+details {
+  /* border-radius: 4px; */
+  line-height: 25px;
+  padding: 0.5em 0.5em 0;
+}
+
+.why-cs-details{
+  margin-left: 20px;
+  padding-right: 30px;
+  text-align: justify;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* spacing between arrow and text */
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: transparent;
+  position: relative;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  /* border-bottom: 1px solid #aaa; */
+  margin-bottom: 0.5em;
+}
+
+.why-csharp,
+.why-internship,
+.fun-facts,
+.things-i-like,
+.my-favourites{
+  font-family: "Inter", sans-serif;
+  font-size: clamp(14px, 2vw, 16px);
+  margin: auto;
+  width: min(50%, 1200px);
+  padding: 1.5rem 1rem;
+  justify-content: space-between;
+}
+
+.why-cs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meme-why-cs{
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.why-csharp{
+  background-color: rgb(245, 237, 237);
+  border-radius: 20px;
+}
+
+.why-cs-p{
+  margin: 0;
+  padding: 0;
+}
+
+

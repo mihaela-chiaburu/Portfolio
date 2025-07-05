@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../images/icon_new (1).ico">
+  <link rel="icon" type="image/x-icon" href="../images/icon_new2.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/about.css">
   <title>Mihaela Chiaburu</title>
 </head>
 <body>
@@ -19,6 +20,9 @@
           <a href="../index.html" class="nav-link">
             <img src="../images/me_button3.png" alt="home page button" class="home-button">
           </a>
+        </li>
+        <li class="navbar-list-item2">
+          <a href="../index.html" class="nav-link">home</a>
         </li>
         <li class="navbar-list-item2">
           <a href="projects.html" class="nav-link">projects</a>
@@ -39,13 +43,13 @@
     <main>
       <article>
         <section class="about-me">
+          <img class="about-me-image aboutpj" src="../images/selfportrait2.png" alt="Self portarait">
           <div class="about-me-info">
-            <h1 class="about-me-salut">Salut, I'm Mihaela!</h1>
-            <p class="about-me-dev"><b>C#/.NET</b> Backend Developer in the making</p>
+            <h1 class="about-me-salut">A few insights about me</h1>
+            <p class="about-me-dev">This page is more personal than professional.</p>
+            <p class="about-me-dev">Feel free to explore, or skip ahead if you’re only here for the tech.</p>
             <p class="about-me-location">
-              Based in Chișinău, Moldova.
-            </p>
-            <p class="about-me-location">
+              Even though I’m still
               <span class="available-green-dot"></span>
               <span class="avail-work">Available for work.</span>
             </p>
@@ -66,7 +70,74 @@
               </div>
             </div>
           </div>
-          <img class="about-me-image" src="../images/icon_new2.png" alt="Self portarait">
+        </section>
+        <section class="why-csharp">
+          <h2 class="skills-h2">Why C#?</h2>
+          <div class="why-cs">
+            <details>
+              <summary>
+                <i class="arrow down"></i>
+                I had a university course "Web Technologies", where the professor focused on backend and made us use .NET.
+              </summary>
+              <div class="why-cs-details">
+                <p class="why-cs-p">
+                  Honestly, the course was a bit traumatic. The professor was extremely strict, blunt, had a STRONG dislike for frontend developers, and didn’t tolerate any deviation from his instructions.
+                </p> 
+                <p class="why-cs-p">But he taught us very solid fundamentals.</p>
+                <p class="why-cs-p">Our project was built with sticks and string, but it was the first time I made something that actually worked as a full system, and I was very proud of the architecture I put together. Later, after doing a Java internship, I realized I truly liked C# much more. </p>
+                <p class="why-cs-p">Also, I’ve been using Visual Studio for as long as I can remember and it’s my comfort zone.</p>
+              </div>
+            </details>
+            <img src="../images/meme_why_csharp.jpg" alt="meme-my-teammates" class="meme-why-cs">
+          </div>
+        </section>
+        <section class="why-internship">
+          <h2 class="skills-h2">You did a Java internship, but you're applying for C# positions?</h2>
+          <details>
+            <summary>
+              At the internship, each team was free to choose the technology they wanted to use for the project.
+            </summary>
+            I took a risk and suggested .NET, since we had all studied Web Technologies using that framework.
+            But my teammates didn’t even want to hear about it — they all decided to go with Java.
+            So, I just had to accept my fate and go along with it. 
+          </details>
+          <img src="../images/meme_why_csharp.jpg" alt="meme-my-teammates" class="meme-why-cs">
+        </section>
+        <section class="fun-facts">
+          <h2 class="skills-h2">Fun Facts</h2>
+          <details>
+            <summary>
+              1. Until I was 13, I thought I’d become a painter. Then, for the next 3 years, I wanted to be a physicist.
+            </summary>
+            Somehow, I ended up as a programmer.
+          </details>
+          <details>
+            <summary>
+              2. I started learning programming in 9th grade, chasing the dream of making a game.
+            </summary>
+            I searched “how to make a game” on YouTube and unknowingly started learning C# for Unity.
+            Later, I gave that up to study Pascal and C++ for school competitions and university classes.
+            But life somehow brought me back to C#. I guess it was meant to be.
+          </details>
+          <details>
+            <summary>
+              3. I’ve been studying French for 13 years and I still don’t speak it.
+            </summary>
+            I hate French 🥀. I studied it in school, then again in university.
+            It feels like a burden… but somehow life keeps tying me to this language.
+          </details>
+          <details>
+            <summary>
+              4. I’m learning Chinese and I genuinely enjoy Chinese culture and memes, not in a weeb way.
+            </summary>
+            It’s more of a chill hobby that I study in a relaxed way.
+          </details>
+        </section>
+        <section class="things-i-like">
+
+        </section>
+        <section class="my-favourites">
+
         </section>
       </article>
     </main>
@@ -88,3 +159,19 @@
   </footer>
 </body>
 </html>
+
+<script>
+  document.querySelectorAll("details").forEach((detail) => {
+    const arrow = detail.querySelector(".arrow");
+
+    detail.addEventListener("toggle", () => {
+      if (detail.open) {
+        arrow.classList.remove("down");
+        arrow.classList.add("up");
+      } else {
+        arrow.classList.remove("up");
+        arrow.classList.add("down");
+      }
+    });
+  });
+</script>
