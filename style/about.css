@@ -1,19 +1,20 @@
 .about-me {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* ✅ makes it responsive */
+  gap: 10px;
 }
 
-.available-green-dot{
+.available-green-dot {
   margin-left: 5px;
 }
 
 details {
-  /* border-radius: 4px; */
   line-height: 25px;
   padding: 0.5em 0.5em 0;
 }
 
-.why-cs-details{
+.why-cs-details {
   margin-left: 20px;
   padding-right: 30px;
   text-align: justify;
@@ -31,7 +32,6 @@ details[open] {
 }
 
 details[open] summary {
-  /* border-bottom: 1px solid #aaa; */
   margin-bottom: 0.5em;
 }
 
@@ -39,37 +39,124 @@ details[open] summary {
 .why-internship,
 .fun-facts,
 .things-i-like,
-.my-favourites{
+.my-favourites {
   font-family: "Inter", sans-serif;
   font-size: clamp(14px, 2vw, 16px);
   margin: auto;
-  width: min(50%, 1200px);
+  width: min(60%, 1200px);
   padding: 1.5rem 1rem;
   justify-content: space-between;
 }
 
-.why-cs{
+.why-csharp,
+.why-internship {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+  /* flex-wrap: wrap; */
+  border: 1px solid #d8d8d8;
+  background: linear-gradient(to bottom, rgb(251, 247, 228), transparent 85%);
+  border-radius: 10px;
+  padding: 1rem;
+  padding-top: 1.5rem;
 }
 
-.meme-why-cs{
-  width: 500px;
+.why-internship {
+  padding-left: 1.5rem;
+  margin-top: 30px;
+}
+
+.meme-why-cs {
+  width: 350px;
   height: auto;
   border-radius: 10px;
+  max-width: 100%;
 }
 
-.why-csharp{
-  background-color: rgb(245, 237, 237);
-  border-radius: 20px;
-}
-
-.why-cs-p{
+.why-cs-p {
   margin: 0;
   padding: 0;
 }
 
+.grid-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  font-size: 15px;
+}
 
+.painting-class,
+.wizard-image {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.wizard-image {
+  height: 188px;
+}
+
+.grid-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  background: linear-gradient(to bottom, rgb(236, 249, 255), transparent 85%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.things-i-like {
+  font-family: "Inter", sans-serif;
+}
+
+.grid-i-like {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* ✅ more responsive */
+  gap: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.grid-i-like div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.i-like-image {
+  width: 100%;
+  max-width: 160px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.i-like-caption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333;
+  max-width: 160px;
+}
+
+/* ✅ Optional media query for stacking text and image in columns on small screens */
+@media (max-width: 768px) {
+  .why-csharp,
+  .why-internship {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-cs-details {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .grid-i-like {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
